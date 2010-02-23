@@ -1,8 +1,7 @@
 Name:		dpatch
-Version:	2.0.30
+Version:	2.0.31
 Release:	%mkrel 1
 Summary:	Debian dpatch tool
-
 Group:		Development/Other
 License:	GPLv2+
 URL:		https://alioth.debian.org/projects/dpatch/
