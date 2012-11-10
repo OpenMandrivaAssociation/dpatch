@@ -1,0 +1,11 @@
+diff -u dpatch-2.0.30/tools/shpp.awk\~ dpatch-2.0.30/tools/shpp.awk
+--- dpatch-2.0.30/tools/shpp.awk~	2007-06-17 00:25:24.000000000 +1000
++++ dpatch-2.0.30/tools/shpp.awk	2008-11-08 15:40:19.000000000 +1000
+@@ -1,4 +1,4 @@
+-#!/usr/bin/nawk -f
++#!/usr/bin/gawk -f
+ # shpp.awk -- Simple preprocessor for shell scripts
+ #
+ #  Copyright (C) 2003  Miles Bader <miles@gnu.org>
+
+Diff finished.  Sat Nov  8 15:40:32 2008
