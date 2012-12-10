@@ -36,3 +36,19 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/dpatch
 %{_mandir}/*/*
 %{_sysconfdir}/bash_completion.d/dpatch_edit_patch
+
+
+%changelog
+* Sun Dec 05 2010 Oden Eriksson <oeriksson@mandriva.com> 2.0.31-2mdv2011.0
++ Revision: 610271
+- rebuild
+
+* Tue Feb 23 2010 Sandro Cazzaniga <kharec@mandriva.org> 2.0.31-1mdv2010.1
++ Revision: 510390
+- up to 2.0.31
+
+* Sat Jan 24 2009 Jérôme Soyer <saispo@mandriva.org> 2.0.30-1mdv2009.1
++ Revision: 333151
+- import dpatch
+
+
