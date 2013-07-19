@@ -1,11 +1,11 @@
 Name:		dpatch
-Version:	2.0.31
-Release:	%mkrel 2
+Version:	2.0.35
+Release:	1
 Summary:	Debian dpatch tool
 Group:		Development/Other
 License:	GPLv2+
 URL:		https://alioth.debian.org/projects/dpatch/
-Source0:	ftp://ftp.debian.org/debian/pool/main/d/dpatch/%{name}_%{version}.tar.gz
+Source0:	ftp://ftp.debian.org:21/debian/pool/main/d/dpatch/dpatch_2.0.35.tar.gz
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Requires:   	dpkg
@@ -50,5 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 * Sat Jan 24 2009 Jérôme Soyer <saispo@mandriva.org> 2.0.30-1mdv2009.1
 + Revision: 333151
 - import dpatch
+
 
 
