@@ -25,7 +25,7 @@ install -d %{buildroot}{%{_mandir}/{man1,man7},%{_bindir}}
 make install DESTDIR=%{buildroot}
 
 %files
-%doc debian/control debian/copyright debian/NEWS README.History
+%doc debian/control debian/copyright debian/NEWS
 %{_bindir}/*
 %{_datadir}/dpatch
 %{_mandir}/*/*
