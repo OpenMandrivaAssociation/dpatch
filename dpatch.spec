@@ -1,13 +1,12 @@
 Name:		dpatch
-Version:	2.0.31
-Release:	%mkrel 2
+Version:	2.0.35
+Release:	1
 Summary:	Debian dpatch tool
 Group:		Development/Other
 License:	GPLv2+
 URL:		https://alioth.debian.org/projects/dpatch/
-Source0:	ftp://ftp.debian.org/debian/pool/main/d/dpatch/%{name}_%{version}.tar.gz
+Source0:	ftp://ftp.debian.org:21/debian/pool/main/d/dpatch/dpatch_2.0.35.tar.gz
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Requires:   	dpkg
 Patch1:		dpatch-nawk.patch
 
@@ -15,22 +14,17 @@ Patch1:		dpatch-nawk.patch
 Debian dpatch tool.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q -n %{name}
 %patch1 -p1 -b .orig
 
 %build
 make
 
 %install
-rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_mandir}/{man1,man7},%{_bindir}}
-make install DESTDIR=$RPM_BUILD_ROOT
-
-%clean
-rm -rf $RPM_BUILD_ROOT
+install -d %{buildroot}{%{_mandir}/{man1,man7},%{_bindir}}
+make install DESTDIR=%{buildroot}
 
 %files
-%defattr(-,root,root)
 %doc debian/control debian/copyright debian/NEWS README.History
 %{_bindir}/*
 %{_datadir}/dpatch
@@ -50,5 +44,6 @@ rm -rf $RPM_BUILD_ROOT
 * Sat Jan 24 2009 Jérôme Soyer <saispo@mandriva.org> 2.0.30-1mdv2009.1
 + Revision: 333151
 - import dpatch
+
 
 
