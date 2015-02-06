@@ -1,6 +1,6 @@
 Name:		dpatch
 Version:	2.0.35
-Release:	1
+Release:	2
 Summary:	Debian dpatch tool
 Group:		Development/Other
 License:	GPLv2+
