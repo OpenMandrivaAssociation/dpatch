@@ -10,6 +10,7 @@ BuildArch:	noarch
 Requires:   	dpkg
 Patch1:		dpatch-nawk.patch
 
+BuildRequires:	make
 %description
 Debian dpatch tool.
 
